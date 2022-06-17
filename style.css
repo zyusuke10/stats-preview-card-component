@@ -1,0 +1,191 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+h1,h2{
+    font-family: 'Inter', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+body{
+    background-color:hsl(233, 47%, 7%);
+}
+
+main{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    margin:88px 0;
+}
+
+.card{
+    width:320px;
+    height:780px;
+    border-radius:15px;
+    background-color:hsl(244, 38%, 16%);
+}
+
+.image-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:hsl(277, 64%, 61%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+img{
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+    width:100%;
+    height:100%; 
+    mix-blend-mode: multiply;
+    opacity:0.75;
+}
+
+.image-desktop{
+    display:none;
+}
+
+.description{
+    margin-top:40px;
+    font-size:16px;
+    padding:0 28px;
+}
+
+.description h1{
+    color:hsl(0, 0%, 100%);
+    font-size:27px;
+}
+
+
+.description p{
+    margin-top:15px;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+.stats h2{
+    color:hsla(0, 0%, 100%, 0.8);
+}
+
+.stats p{
+    color:hsla(0, 0%, 100%, 0.6);
+    text-transform:uppercase;
+    font-size:12px;
+}
+
+.company{
+    margin-top:38px;
+}
+
+.templates{
+    margin-top:25px;
+}
+
+.queries{
+    margin:25px 0 30px 0;
+}
+
+@media screen and (min-width:1440px){
+    main{
+        height:100vh;
+        align-items: center;
+        justify-content: center;
+        text-align:initial;
+        display:flex;
+        flex-direction: row;
+        margin:0;
+    }
+
+    .card{
+        width:568px;
+        height:450px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: initial;
+        border-top-right-radius: initial;
+        background-color:hsl(244, 38%, 16%);
+        padding:70px 110px 60px 65px
+    }
+
+    .image-container{
+        display:none;
+    }
+
+    .image-desktop{
+        background-color:hsl(277, 64%, 61%);
+        border-top-left-radius: initial;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        width:540px;
+        height:450px;
+        display:initial;
+    }
+    .desktop{
+        width:100%;
+        height:100%;
+    }
+
+    .description{
+        margin-top:0px;
+    }
+    .description h1{
+        font-size:32px;
+    }
+
+    .description p{
+        margin-top:30px;
+        font-size:15px;
+        line-height:25px;
+    }
+
+    .stats{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top:75px;
+    }
+
+    .stats h2{
+        font-size:25px;
+    }
+
+    .stats p{
+        font-size:15px;
+        margin-top:5px;
+    }
+
+    .company{
+        margin-top:0px;
+    }
+    
+    .templates{
+        margin-top:0px;
+    }
+    
+    .queries{
+        margin:0px;
+    }
+
+}
+
+
+
+
